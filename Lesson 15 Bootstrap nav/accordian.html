@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap Nav Tabs</title>
+  <!--add bootsrap css file hre-->
+  <link rel='stylesheet' type='text/css' href='bootstrap/css/bootstrap.min.css' />
+  <style> 
+   body{
+   		padding-top: 70px
+   }
+  </style>
+</head>
+<body>
+	<!--add classes to fix nav to top and change nav color-->
+	<nav class="navbar navbar-inverse navbar-fixed-top">		
+		<div class='container'>
+		    <div class=" navbar-header">
+		    	<a class="navbar-brand" href="#">CHOCOBLOCK</a>
+		    </div>	    
+		    <ul  class="nav navbar-nav navbar-right  ">
+				 <li><a href="#">Home</a></li>
+			     <li><a href="#">About</a></li>
+			     <li><a href="#">Portfolio</a></li>
+			     <li><a href="#">Blog</a></li>
+			     <li><a href="#">Contact</a></li>
+			</ul>
+		</div>
+	</nav> 
+
+		<div class='container'>
+
+			<div class="panel-group" id="accordion">
+				<div class="panel panel-default">
+	                <div class="panel-heading">
+	                    <h4 class="panel-title">
+	                        <!--link panel heading to panel body via  href and add toggle effect-->
+	                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">1. What is HTML?</a>
+	                    </h4>
+	                </div>
+	                <!--set first panel to open position with class in-->
+	                <div id="collapseOne" class="panel-collapse collapse in">
+	                    <div class="panel-body">
+	                        <p>HTML stands for HyperText Markup Language. HTML is the main markup language for describing the structure of Web pages. <a href="http://www.tutorialrepublic.com/html-tutorial/" target="_blank">Learn more.</a></p>
+	                    </div>
+	                </div>
+				</div>
+				<div class="panel panel-default">
+	                <div class="panel-heading">
+	                    <h4 class="panel-title">
+	                        <!--link panel heading to panel body via  href and add toggle effect-->
+	                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">1. What is HTML?</a>
+	                    </h4>
+	                </div>
+	                <!--set first panel to open position with class in-->
+	                <div id="collapseTwo" class="panel-collapse collapse">
+	                    <div class="panel-body">
+	                        <p>HTML stands for HyperText Markup Language. HTML is the main markup language for describing the structure of Web pages. <a href="http://www.tutorialrepublic.com/html-tutorial/" target="_blank">Learn more.</a></p>
+	                    </div>
+	                </div>
+				</div>
+				<div class="panel panel-default">
+	                <div class="panel-heading">
+	                    <h4 class="panel-title">
+	                        <!--link panel heading to panel body via  href and add toggle effect-->
+	                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">1. What is HTML?</a>
+	                    </h4>
+	                </div>
+	                <!--set first panel to open position with class in-->
+	                <div id="collapseThree" class="panel-collapse collapse">
+	                    <div class="panel-body">
+	                        <p>HTML stands for HyperText Markup Language. HTML is the main markup language for describing the structure of Web pages. <a href="http://www.tutorialrepublic.com/html-tutorial/" target="_blank">Learn more.</a></p>
+	                    </div>
+	                </div>
+				</div>
+			</div>
+
+
+		</div>
+
+</body>
+<!--add bootstrap js files here-->
+	<script src='http://code.jquery.com/jquery.min.js'></script>
+	<script src='bootstrap/js/bootstrap.min.js'></script>
+</html>
